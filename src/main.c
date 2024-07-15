@@ -2,6 +2,9 @@
 #include "task.h"
 #include <stdio.h>
 #include "pico/stdlib.h"
+// #include "../debug_probe/probe.h"
+
+
 
 
 void led_task()
@@ -13,7 +16,7 @@ void led_task()
         gpio_put(LED_PIN, 1);
         vTaskDelay(100);
         gpio_put(LED_PIN, 0);
-        vTaskDelay(100);
+        vTaskDelay(1000);
     }
 }
 
