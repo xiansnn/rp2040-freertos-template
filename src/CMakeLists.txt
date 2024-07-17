@@ -1,5 +1,5 @@
 add_executable(${ProjectName}_blink
-    main.c
+    main.cpp
 )
 
 target_include_directories(${ProjectName}_blink PRIVATE
